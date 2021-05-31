@@ -1,0 +1,11 @@
+{
+  "name": "simon-ts",
+  "version": "1.0.0",
+  "description": "A Simon Game",
+  "repository": "https://github.com/GermainMichaud/simon-ts",
+  "author": "Germain Michaud",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0"
+  }
+}
