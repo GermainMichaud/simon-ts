@@ -1,0 +1,102 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-decoration: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  cursor: pointer;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+button.button {
+  width: 12.5rem;
+  height: 12.5rem;
+  /* border: 2px solid #ccc; */
+  border: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+button.unclickable {
+  pointer-events: none;
+}
+.red {
+  position: relative;
+  background-color: rgb(192, 31, 31);
+  border-radius: 100% 0% 33% 67% / 100% 67% 33% 0%;
+}
+.yellow {
+  position: relative;
+  background-color: rgb(189, 192, 31);
+  border-radius: 67% 33% 0% 100% / 0% 33% 67% 100%;
+}
+.green {
+  position: relative;
+  background-color: rgb(58, 192, 31);
+  border-radius: 33% 67% 100% 0% / 33% 0% 100% 67%;
+}
+.blue {
+  position: relative;
+  background-color: rgb(31, 101, 192);
+  border-radius: 0% 100% 67% 33% / 67% 100% 0% 33%;
+}
+.red.highlight {
+  background-color: rgb(255, 44, 44);
+}
+.red.highlight:before {
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(ellipse at bottom right, transparent 10%, rgba(255, 44, 44, 0.75) 14%, transparent 65%);
+}
+.yellow.highlight {
+  background-color: rgb(251, 255, 30);
+}
+.yellow.highlight:before {
+  top: 0;
+  right: 0;
+  background: radial-gradient(ellipse at top right, transparent 10%, rgba(251, 255, 30, 0.75) 14%, transparent 65%);
+}
+.green.highlight {
+  background-color: rgb(66, 247, 30);
+}
+.green.highlight:before {
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at top left, transparent 10%, rgba(66, 247, 30, 0.75) 14%, transparent 65%);
+}
+.blue.highlight {
+  background-color: rgb(31, 128, 255);
+}
+.blue.highlight:before {
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(ellipse at bottom left, transparent 10%, rgba(31, 128, 255, 0.75) 14%, transparent 65%);
+}
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 26rem;
+}
+#buttons button:before {
+  content: '';
+  width: 165%;
+  height: 165%;
+  display: block;
+  position: absolute;
+}
