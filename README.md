@@ -11,7 +11,7 @@ git clone https://github.com/GermainMichaud/simon-ts
 cd ./simon-ts
 ```
 
-Install dependencies:
+Install dependencies (Optional):
 
 ```bash
 yarn
@@ -23,7 +23,7 @@ or
 npm i
 ```
 
-## Compile Typescript file(s)
+## Compile Typescript file(s) (Optional)
 
 You need to install [typescript](https://github.com/Microsoft/TypeScript):
 
